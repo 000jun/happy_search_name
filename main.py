@@ -9,16 +9,12 @@ st.header('이름 검색기 페이지', divider='rainbow')
 
 # 데이터프레임 호출
 df = pd.read_excel('secure_data.xlsx')
-columns = ['번호','이름','last_num']
-df = df[columns]
 df['last_num'] = df['last_num'].astype(str)
-
-print(df.columns)
 
 # 이름 입력
 name = st.text_input(label='검색할 이름을 입력하시오.')
 
-# 이름 검색
+# 이름 검색 
 condition = df['이름'] == name
 result = df[condition]
 
