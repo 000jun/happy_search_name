@@ -9,7 +9,7 @@ st.header('이름 검색기 페이지', divider='rainbow')
 
 # 데이터프레임 호출
 df = pd.read_excel('secure_data_0517.xlsx')
-df['last_num'] = df['last_number'].astype(str)
+df['last_number'] = df['last_number'].astype(str)
 
 # 이름 입력
 name = st.text_input(label='검색할 이름을 입력하시오.')
