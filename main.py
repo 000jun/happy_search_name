@@ -8,7 +8,7 @@ st.set_page_config(layout='wide')
 st.header('이름 검색기 페이지', divider='rainbow')
 
 # 데이터프레임 호출
-df = pd.read_excel('secure_data.xlsx')
+df = pd.read_excel('secure_data_0517.xlsx')
 df['last_num'] = df['last_num'].astype(str)
 
 # 이름 입력
